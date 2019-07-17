@@ -588,3 +588,29 @@ body {
         justify-content: space-between;
     }
 }
+
+.footer-images {
+    padding: 70px 0;
+    background-color: #464646;
+    &__wrapper {
+        max-width: 100%;
+        overflow: hidden;
+        display: flex;
+        padding: 5px;
+    }
+
+    &__img {
+        display: block;
+        flex: 0 0 20%;
+    
+        & > img {
+            padding: 5px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: solid 6px #464646;
+        }
+    }
+}
