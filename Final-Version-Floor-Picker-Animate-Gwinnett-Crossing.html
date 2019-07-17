@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
+<head>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>Final-Version-Floor-Picker-Animate-Gwinnett-Crossing</title>
+<!-- write your code here -->
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="Final-Version-Floor-Picker-Animate-Gwinnett-Crossing.js"></script>
+
+<!-- write your code here -->
+</head>
+<body onload="init();">
+<div class="section cta">
+	<div class="container-fluid">
+		<h1>Floorplans</h1>
+	</div>
+</div>
+
+<section class="marketing">
+	<h1>Spacious Apartments in New Orleans, Louisiana</h1>
+	<p>The Midrise Apartments encompasses an impressive selection of seven unique floor plans that are sure to accompany an array of lifestyles and income brackets. Residents will have the ability to choose from a one or two bedroom floor plan. Despite the apartment home you choose, each features a living and dining area, a kitchen, a private patio or balcony with bonus storage space, </p>
+</section>
+
+<div class="floorpicker">
+	<div class="floorpicker__header-wrap">
+		<div class="view-wrapper">
+			<a href="#" class="btn btn--header"> View Interactive Map</a>
+			<a href="https://theme-precession.365residentservices.com/Marketing/FloorPlans" class="btn btn--header">View Floorplans</a>
+		</div>
+	</div>
+
+	<div class="floorpicker__filter">
+		<div class="btn-options">
+			<h4>Bedrooms</h4>
+			<div class="btn-group" role="group" aria-label="Basic example">
+				<button type="button" class="btn btn--options">Studio</button>
+				<button type="button" class="btn btn--options">One</button>
+				<button type="button" class="btn btn--options">Two</button>
+				<button type="button" class="btn btn--options">Three</button>
+			</div>
+		</div>
+
+		<div class="btn-options btn-options--padding">
+			<h4>Bathrooms</h4>
+			<div class="btn-group" role="group" aria-label="Basic example">
+				<button type="button" class="btn btn--options">One</button>
+				<button type="button" class="btn btn--options">Two</button>
+				<button type="button" class="btn btn--options">Three</button>
+			</div>
+		</div>
+
+		<div class="btn-options btn-options--last">
+			<div class="btn-options__rent-header">
+				<h4>Rent </h4>
+				<span>$1140</span>
+			</div>
+			<div class="slidecontainer">
+				<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+			</div>
+		</div>
+	</div>
+
+	<div class="floorpicker__wrapper">
+		<div class="floorpicker__frame" id="animation_container">
+			<canvas id="canvas"></canvas>
+			<span>This is a picture, sometimes pictures are different than Rel Lyfe</span> 
+			<button type="button" class="btn btn--abs" data-toggle="modal" data-target="#floorplan">
+				<span>Room 14A </span>
+			</button>			
+			<div class="floorpicker__overlay" id="dom_overlay_container"></div>
+		</div>
+	</div>
+	  <!-- Modal -->
+	  <section class="floorplan">
+			<div class="floorplan__modal modal fade" id="floorplan" tabindex="-1" role="dialog" aria-labelledby="floorplan" aria-hidden="true">
+				<div class="floorplan__dialog modal-dialog modal-dialog-centered" role="document">
+					<div class="floorplan__content modal-content">
+					<div class="floorplan__header modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">Floorplan-a-rino</h5>
+						<button type="button" class="close btn btn--close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>						
+					</div>
+					<div class="floorplan__body modal-body">
+						<div class="floorplan__content-wrap">
+							<h1>Garden District</h1>
+							<h5>1 Bed | 1 Bath 597 Square Feet </h5>
+							<h5>597 Square Feet</h5>
+							<h5>Availability 5 Units</h5>
+							<a href="https://theme-precession.365residentservices.com/Marketing/Contact" class="btn btn--footer">Request Tour</a>
+							<a href="https://theme-precession.365residentservices.com/RentalApp?plan=d69c1e83-1c5c-47d9-b17c-942a037d2d2a&unit=d9551ec9-727b-49bd-9388-59fd3b33b30emovein=1563235200000term=12" class="btn btn--footer btn--footer-2">Apply Now</a>
+						</div>
+						<img src="images/floorplan.png" alt="floorplan" class="floorplan__img">
+					</div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+	</div>
+
+	<section class="greybar">
+		<h2>ipsom Lorem ipsum dolor sit, amet <br> consectetur adipisicing elit.</h2>
+		<a href="#" class="greybar__btn">Contact us</a>
+	</section>
+
+	<section class="site-bottom">
+		<div class="site-bottom__wrapper">
+			<div class="site-bottom__text">
+				<h4>We're Here For You</h4>
+				<p>Interested in visiting our property? Please feel free to call us and we will reach out to you shortly! We look forward to hearing from you!</p>
+
+				<div class="site-bottom__hours">
+					<h4>Get in Touch</h4>
+					<ul>
+						<li>Monday: <span>9am – 7pm</span> </li>
+						<li>Tuesday: <span>9am – 7pm </span>   </li>
+						<li>Wednesday: <span>9am – 7pm</span> </li>
+						<li>Thursday: <span>9am – 7pm</span> </li>
+						<li>Friday: <span>9am – 6pm</span> </li>
+						<li>Saturday: <span>10am – 6pm</span> </li>
+						<li>Sunday: <span>12pm – 5pm</span> </li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="site-bottom__contact contact">
+				<form>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Name</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email Address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Phone</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter phone">
+					</div>					
+					<div class="form-group">
+						<label for="exampleInputPassword1">Message</label>
+						<textarea row="6" class="form-control"> </textarea>
+					</div>
+					<div class="site-bottom__form-btns">
+						<iframe class="" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LcrVVYUAAAAABjUUlafmB3qF7LjkggjWr8zbdNi&amp;co=aHR0cHM6Ly93d3cucGFya2F0Y3J5c3RhbGZhbGxzLmNvbTo0NDM.&amp;hl=en&amp;v=v1562567553145&amp;theme=light&amp;size=normal&amp;cb=y7obnrfb6blq" width="304" height="78" role="presentation" name="a-wmzshglvuams" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+						<button type="submit" class="btn btn-primary btn--contact">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
+
+
+<script src="animation.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
